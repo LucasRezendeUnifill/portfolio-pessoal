@@ -6,6 +6,7 @@ import Contact from "./site/contact";
 import Footer from "./site/footer";
 import Subjects from "./site/subject";
 import AboutMe from "./site/about";
+import Certificates from "./site/certificates";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <AboutMe />
       <Skills />
+      <Certificates />
       <Subjects />
       <Contact />
       <Footer />

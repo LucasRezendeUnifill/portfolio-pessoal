@@ -1,7 +1,11 @@
+"use client"
+import React, { useState } from 'react';
 import SubjectCard from '@/components/SubjectCard';
-import React from 'react';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const Subjects: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const subjects = [
     { subject: 'Gerência de Configuração e Controle de Versão', description: 'Ferramentas de Controle de Versão' },
     { subject: 'Gerência de Requisitos', description: 'Modelagem de Processo de Negócios' },
@@ -50,13 +54,31 @@ const Subjects: React.FC = () => {
     { subject: 'Arquitetura de Software', description: 'Estilos arquiteturais' },
   ];
 
+  const itemsToShow = isExpanded ? subjects.length : 8; // Mostra 8 itens inicialmente
+
   return (
-       <section className="p-8 bg-gray-100 dark:bg-gray-900">
+    <section className="p-8 bg-gray-100 dark:bg-gray-900">
       <h2 className="text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white">Matérias Cursadas</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {subjects.map((subject, index) => (
+        {subjects.slice(0, itemsToShow).map((subject, index) => (
           <SubjectCard key={index} subject={subject.subject} description={subject.description} />
         ))}
+      </div>
+      <div className="flex justify-center mt-8">
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="text-indigo-600 font-semibold hover:underline flex items-center"
+        >
+          {isExpanded ? (
+            <>
+              Mostrar Menos <FaChevronUp className="ml-2" />
+            </>
+          ) : (
+            <>
+              Mostrar Mais <FaChevronDown className="ml-2" />
+            </>
+          )}
+        </button>
       </div>
     </section>
   );
