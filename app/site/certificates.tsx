@@ -126,13 +126,13 @@ export default function Certificates() {
   ];
 
   return (
-       <section id="certificados" className="py-12 bg-gray-100">
+       <section id="certificados" className="py-12 bg-gray-300">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Meus Certificados</h2>
-        <div className="bg-white shadow-md rounded-lg p-6 mb-4">
+        <div className="bg-gray-200 shadow-md rounded-lg p-6 mb-4">
           <div className={`grid grid-cols-2 gap-4 ${isExpanded ? '' : 'max-h-48 overflow-hidden'}`}>
             {certificados.map((cert) => (
-              <div key={cert.id} className="bg-white shadow-md rounded-lg p-6">
+              <div key={cert.id} className="bg-gray-100 shadow-md rounded-lg p-6">
               <div className="flex items-center mb-4">
                 <FaCertificate className="text-indigo-600 text-3xl mr-3" />
                 <h3 className="text-xl font-semibold text-gray-800">{cert.titulo}</h3>

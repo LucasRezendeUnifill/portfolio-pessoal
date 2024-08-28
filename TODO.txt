@@ -1,6 +1,4 @@
 Implementações futuras a se fazer:
 - criação da newsletter
 - implementação da função de envio de email
-- sessão de apresentações (apresentações e power point)
 - sessão de vídeos
-- sessão de certificados

@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-  <section id="skills" className="py-16 text-center bg-gray-50">
+  <section id="skills" className="py-16 text-center bg-gray-200">
   <h2 className="text-3xl font-bold mb-4 text-gray-800">Skills</h2>
   <p className="text-lg text-gray-600 mb-8">
     Minha lista de habilidades que venho desenvolvendo ao longo dos bimestres

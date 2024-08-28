@@ -7,6 +7,8 @@ import Footer from "./site/footer";
 import Subjects from "./site/subject";
 import AboutMe from "./site/about";
 import Certificates from "./site/certificates";
+import { Presentation } from "./site/presentation";
+import { Video } from "./site/video";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Skills />
       <Certificates />
       <Subjects />
+      <Presentation />
+      <Video />
       <Contact />
       <Footer />
     </>

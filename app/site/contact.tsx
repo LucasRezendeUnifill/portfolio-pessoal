@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="flex-col text-center h-full py-8 mt-6 flex justify-center items-center">
+    <section id="contact" className="flex-col text-center h-full py-8 flex justify-center items-center bg-gray-300">
       <h1 className="text-4xl font-bold mb-8">Contact</h1>
       <form action="" className="flex flex-col gap-8">
         <div className="formGroup">
