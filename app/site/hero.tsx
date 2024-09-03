@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col justify-center gap-5 text-center py-16 md:flex-row-reverse md:items-center md:justify-evenly bg-gray-900"
+      className="flex flex-col justify-center gap-5 text-center py-16 md:flex-row-reverse md:items-center md:justify-evenly bg-white"
     >
       <div className="relative">
         <Image
@@ -22,18 +22,18 @@ const Hero: React.FC = () => {
         />
       </div>
       <div className="flex flex-col gap-5 text-center">
-        <h1 className="text-4xl font-bold text-white">
+        <h1 className="text-4xl font-bold text-black">
           Lucas
           <br />
-          Oliveira
+          Rezende
         </h1>
-        <h2 className="text-2xl text-white">Engenheiro de Software</h2>
+        <h2 className="text-2xl text-black">Engenheiro de Software</h2>
         <span className="flex gap-6 justify-center">
           <a href="https://github.com/oliveeiralucas" target="_blank" rel="noopener noreferrer">
-            <div className="text-2xl text-white">{githubIcon}</div>
+            <div className="text-2xl text-black">{githubIcon}</div>
           </a>
-          <a href="https://linkedin.com/oliveeira.lucas" target="_blank" rel="noopener noreferrer">
-            <div className="text-2xl text-white">{linkedinIcon}</div>
+          <a href="https://github.com/LucasRezendeUnifill" target="_blank" rel="noopener noreferrer">
+            <div className="text-2xl text-black">{linkedinIcon}</div>
           </a>
         </span>
         <p className="max-w-[24ch] mx-auto text-lg text-[var(--form-text-color)]">

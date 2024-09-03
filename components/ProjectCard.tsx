@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ src, link, h3, p }) => {
       />
       <div className="p-4">
         <h3 className="text-xl font-semibold mb-2">{h3}</h3>
-        <p className="text-gray-600">{p}</p>
+        <p className="text-black">{p}</p>
       </div>
     </a>
   );

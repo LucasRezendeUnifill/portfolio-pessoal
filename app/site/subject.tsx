@@ -57,8 +57,8 @@ const Subjects: React.FC = () => {
   const itemsToShow = isExpanded ? subjects.length : 8; // Mostra 8 itens inicialmente
 
   return (
-    <section className="p-8 bg-gray-200">
-      <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Matérias Cursadas</h2>
+    <section className="p-8 bg-gray-100">
+      <h2 className="text-4xl font-bold mb-12 text-center text-black">Matérias Cursadas</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {subjects.slice(0, itemsToShow).map((subject, index) => (
           <SubjectCard key={index} subject={subject.subject} description={subject.description} />
@@ -67,7 +67,7 @@ const Subjects: React.FC = () => {
       <div className="flex justify-center mt-8">
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="text-indigo-600 font-semibold hover:underline flex items-center"
+          className="text-black font-semibold hover:underline flex items-center"
         >
           {isExpanded ? (
             <>

@@ -10,25 +10,25 @@ export const Presentation = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-300">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Minhas Apresentações</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-black">Minhas Apresentações</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {presentations.map((presentation, index) => (
-            <div key={index} className="bg-gray-100 shadow-md rounded-lg p-6">
+            <div key={index} className="bg-white shadow-md rounded-lg p-6">
               <div className="flex items-center justify-center mb-4">
                 <FaFilePowerpoint className="text-red-600 text-5xl" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">
+              <h3 className="text-xl font-semibold text-black mb-2 text-center">
                 {presentation.title}
               </h3>
-              <p className="text-gray-600 text-center mb-4">{presentation.description}</p>
+              <p className="text-black text-center mb-4">{presentation.description}</p>
               <div className="flex justify-center">
                 <a
                   href={presentation.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-indigo-600 font-semibold hover:underline flex items-center"
+                  className="text-black font-semibold hover:underline flex items-center"
                 >
                   Ver Apresentação
                 </a>

@@ -1,4 +1,0 @@
-Implementações futuras a se fazer:
-- criação da newsletter
-- implementação da função de envio de email
-- sessão de vídeos
